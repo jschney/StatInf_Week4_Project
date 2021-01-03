@@ -16,6 +16,8 @@ sample.distr <- matrix(data = rexp(n*sims,lambda), nrow = sims)
 ##Calculate mean of 40 variables for each simulation
 x <- apply(sample.distr, 1, mean)
 
+mean(x)
+
 ##Plot histogram of sample means, vertical line at mean for visual
 hist(x)
 abline(v = mean(x), col = "red", lty = 1, lwd = 5)
